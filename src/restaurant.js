@@ -11,8 +11,10 @@ var pizzaRestaurant = {
   return pizzaRestaurant;
 };
 
+function addMenuItem() {
 
-module.exports = {createRestaurant,
-  // addMenuItem,
+};
+
+module.exports = {createRestaurant, addMenuItem,
   // removeMenuItem
 }
