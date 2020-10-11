@@ -18,9 +18,11 @@ function addMenuItem(pizzaRestaurant, menuItem) {
       return pizzaRestaurant.menus.breakfast.push(menuItem);
     } else if (menuItem.type === "dinner"){
       return pizzaRestaurant.menus.dinner.push(menuItem)
+    } else if (pizzaRestaurant.indexOf(menuItem) === -1){
+      return pizzaRestaurant.menus.pop();
     } else {
-      return ;
-    };
+      return;
+    }
 
     ////pizzaRestaurant.menus.breakfast.pop();
     // if (pizzaRestaurant.includes(menuItem) !== true) {
@@ -31,11 +33,7 @@ function addMenuItem(pizzaRestaurant, menuItem) {
 };
 
 function removeMenuItem(pizzaRestaurant, menuItem) {
-  if(menuItem === menuItem.name) {
-      return pizzaRestaurant.menus.pop(menuItem);
-    } else {
-      return ;
-    }
+
 // if (menuItem.name === menuItem)
 //   return pizzaRestaurant.menus.splice(pizzaRestaurant.menus.menuItem);
 };
